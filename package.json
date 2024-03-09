@@ -11,6 +11,7 @@
     "cypress:ui": "cypress open",
     "cypress:start": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
     "cypress": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
+    "posttest": "npx nyc report --reporter lcov --reporter text --report-dir coverage",
     "test": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
     "prepare": "husky install && chmod ug+x .husky/*"
   },
@@ -34,6 +35,7 @@
     "eslint-plugin-prettier": "^5.1.3",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
+    "nyc": "^15.1.0",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "start-server-and-test": "^2.0.3",
