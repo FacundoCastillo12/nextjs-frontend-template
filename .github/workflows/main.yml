@@ -1,6 +1,5 @@
 name: main
 on:
-  # Should only be on push or pull request to main.
   push:
     branches: ['main']
   pull_request:
@@ -8,13 +7,11 @@ on:
   workflow_dispatch:
 
 jobs:
-  test:
+  test_action:
     runs-on: ubuntu-latest
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Cache dependencies
       - uses: actions/setup-node@v3
         with:
           node-version: 18.19.1
