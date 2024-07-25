@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Next.js Template Overview:
 
 - Coverage Reporting: Integrated coverage reporting to ensure code quality and identify untested parts of the application.
 - CI/CD Workflow: Configured GitHub Actions for Continuous Integration and Continuous Deployment (CI/CD) to automate testing and deployment processes.
